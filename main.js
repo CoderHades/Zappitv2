@@ -120,7 +120,7 @@ $('.retailer-list .unit').on('click', function(){
     else{
         var store = $(this).data('store');
     }
-    $('#retailerImage').attr("style", "background-image: url('https://s3rewards.s3.amazonaws.com/15688.jpeg');");
+     $('#retailerImage').attr("style", "background-image: url('stores/" + store + ".png');");
 
     if(staticBarcode !== null){
         var appendage = retailers.retailers[$(this).data('store')] + ".png";
